@@ -1,0 +1,418 @@
+{
+    "database": "jeux_python_objet",
+    "table": "objets",
+    "columns": [
+      {
+        "name": "Id_Objets",
+        "type": "int",
+        "auto_increment": true
+      },
+      {
+        "name": "prix",
+        "type": "int",
+        "nullable": true
+      },
+      {
+        "name": "nom",
+        "type": "varchar(50)",
+        "nullable": true
+      },
+      {
+        "name": "description",
+        "type": "varchar(255)",
+        "nullable": true
+      },
+      {
+        "name": "degats",
+        "type": "varchar(20)",
+        "nullable": true
+      },
+      {
+        "name": "resistance",
+        "type": "int",
+        "nullable": true
+      },
+      {
+        "name": "hp",
+        "type": "int",
+        "nullable": true
+      },
+      {
+        "name": "attribut",
+        "type": "varchar(50)",
+        "nullable": true
+      },
+      {
+        "name": "vitesse",
+        "type": "varchar(20)",
+        "nullable": true
+      },
+      {
+        "name": "mana",
+        "type": "varchar(50)",
+        "nullable": true
+      }
+    ],
+    "data": [
+      {
+        "Id_Objets": 1,
+        "prix": 100,
+        "nom": "Potion de soin",
+        "description": "Potion qui rend 500 de point de vie",
+        "degats": 0,
+        "resistance": 0,
+        "hp": 500,
+        "attribut": "0",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 2,
+        "prix": 100,
+        "nom": "Potion de mana",
+        "description": "Potion qui rend 200 de point de mana",
+        "degats": 0,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "0",
+        "vitesse": 0,
+        "mana": 200
+      },
+      {
+        "Id_Objets": 3,
+        "prix": 140,
+        "nom": "Masse de combat",
+        "description": "Masse de démolition faite pour le combat",
+        "degats": 150,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": -10,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 4,
+        "prix": 50,
+        "nom": "Épée classique",
+        "description": "Une Épée classique",
+        "degats": 100,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 5,
+        "prix": 100,
+        "nom": "Arc long",
+        "description": "description",
+        "degats": 80,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 6,
+        "prix": 120,
+        "nom": "Bâton de mage",
+        "description": "Un bâton magique fait pout le combat",
+        "degats": 175,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": -50
+      },
+      {
+        "Id_Objets": 7,
+        "prix": 100,
+        "nom": "Bouclier",
+        "description": "Un bouclier pour réduire les dégats reçu (utilisable uniquement avec une arme mélée)",
+        "degats": 0,
+        "resistance": 10,
+        "hp": 50,
+        "attribut": "2ème main",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 8,
+        "prix": 150,
+        "nom": "Double dague de combat",
+        "description": "deux dagues de combat (impossible d'équiper un bouclier",
+        "degats": 150,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 9,
+        "prix": 150,
+        "nom": "Arbalète classique",
+        "description": "Une arbalète classique",
+        "degats": 140,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 10,
+        "prix": 200,
+        "nom": "Bâton de feu",
+        "description": "Un bâton de feu fait pour les mages",
+        "degats": 200,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": -500
+      },
+      {
+        "Id_Objets": 11,
+        "prix": 160,
+        "nom": "Hache de combat",
+        "description": "Une hache tailé pour le combat",
+        "degats": 140,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": 30,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 12,
+        "prix": 130,
+        "nom": "Trident",
+        "description": "Des tridents de lancer",
+        "degats": 150,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 20
+      },
+      {
+        "Id_Objets": 13,
+        "prix": 150,
+        "nom": "Bâton de soin",
+        "description": "Un bâton de mage qui soigne les joueurs",
+        "degats": 0,
+        "resistance": 0,
+        "hp": 50,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 50
+      },
+      {
+        "Id_Objets": 14,
+        "prix": 150,
+        "nom": "Marteau de combat",
+        "description": "Un marteau fait pour combattre",
+        "degats": 180,
+        "resistance": 15,
+        "hp": 0,
+        "attribut": "attribut",
+        "vitesse": 0,
+        "mana": -15
+      },
+      {
+        "Id_Objets": 15,
+        "prix": 200,
+        "nom": "Grand bouclier",
+        "description": "Un grand bouclier pour réduire les dégats de manière plus efficace",
+        "degats": 30,
+        "resistance": 100,
+        "hp": 0,
+        "attribut": "2ème main",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 16,
+        "prix": 1000,
+        "nom": "excaligourdin",
+        "description": "un grand bâton qui fait bong",
+        "degats": 900,
+        "resistance": 200,
+        "hp": 100,
+        "attribut": "mélée",
+        "vitesse": 0,
+        "mana": 500
+      },
+      {
+        "Id_Objets": 17,
+        "prix": 170,
+        "nom": "Livre magique",
+        "description": "Un livre magique qui augmente les aptitudes des mages",
+        "degats": 0,
+        "resistance": 0,
+        "hp": 100,
+        "attribut": "2ème main",
+        "vitesse": 10,
+        "mana": 100
+      },
+      {
+        "Id_Objets": 18,
+        "prix": 150,
+        "nom": "Carquois",
+        "description": "Un carquois qui augmente les aptitudes des tireurs",
+        "degats": "+5%",
+        "resistance": 0,
+        "hp": 100,
+        "attribut": "2ème main",
+        "vitesse": 10,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 19,
+        "prix": 200,
+        "nom": "Livre de sorts ancien",
+        "description": "un grand bâton qui fait bong",
+        "degats": 0,
+        "resistance": 0,
+        "hp": 100,
+        "attribut": "2ème main",
+        "vitesse": 10,
+        "mana": 150
+      },
+      {
+        "Id_Objets": 20,
+        "prix": 160,
+        "nom": "Double mini arbalète",
+        "description": "Deux mini arbalète (utilisable uniquement avec une arme mélée)",
+        "degats": 180,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 21,
+        "prix": 200,
+        "nom": "Mini canon",
+        "description": "UN mini canon qui peut tirer sur les enemies",
+        "degats": 210,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 75
+      },
+      {
+        "Id_Objets": 22,
+        "prix": 180,
+        "nom": "Lance de combat",
+        "description": "Une lance de combat qui s'utilise a semi longue distance",
+        "degats": 150,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "semi-distance",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 23,
+        "prix": 250,
+        "nom": "Bâton du mal",
+        "description": "Un bâton demoniaque controlé par certain mages",
+        "degats": 250,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 150
+      }
+      ,{
+        "Id_Objets": 24,
+        "prix": 160,
+        "nom": "Carquois sans fond",
+        "description": "Un carquois qui augmente beacoup les aptitudes des tireurs",
+        "degats": 180,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 25,
+        "prix": 165,
+        "nom": "Gants de combat",
+        "description": "Des gants en métal fait pour le combat",
+        "degats": 150,
+        "resistance": 10,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 26,
+        "prix": 120,
+        "nom": "Casque classique",
+        "description": "Un casque de protection classique",
+        "degats": 0,
+        "resistance": 15,
+        "hp": 15,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0
+      },{
+        "Id_Objets": 27,
+        "prix": 150,
+        "nom": "Casque en métal",
+        "description": "Un casque de protection en métal pour absorber les choques puissant",
+        "degats": 0,
+        "resistance": 25,
+        "hp": 20,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 28,
+        "prix": 160,
+        "nom": "Casque de protéction avancé",
+        "description": "Un casque de protection classique",
+        "degats": 0,
+        "resistance": 30,
+        "hp": 20,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0 
+      },
+      {
+        "Id_Objets": 29,
+        "prix": 200,
+        "nom": "Casque en acier trempé",
+        "description": "Un casque en acier trempé qui absorbe les choques en étant leger",
+        "degats": 0,
+        "resistance": 25,
+        "hp": 20,
+        "attribut": "armure",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 30,
+        "prix": 200,
+        "nom": "Casque en mithril",
+        "description": "Un casque de protection en mithril pour absorber les choques les plus puissants",
+        "degats": 0,
+        "resistance": 50,
+        "hp": 40,
+        "attribut": "armure",
+        "vitesse": -10,
+        "mana": 0
+      }
+    ]
+  }
+  
