@@ -1,0 +1,92 @@
+{
+    "nom": "prairie",
+    "descrption": "Une prairie verdoyante et paisible où les monstres sont faibles",
+    "histoire": [
+        {
+            "texte": "Le chemin ce sépare en deux, vous avez deux options",
+            "evenement": [
+                {
+                    "nom": "prairie",
+                    "description": "Vous continuez votre chemin dans la prairie",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "foret",
+                    "description": "Vous vous dirigez vers la forêt",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Vous arrivez à un carrefour, vous avez trois options",
+            "evenement": [
+                {
+                    "nom": "prairie",
+                    "description": "Vous continuez votre chemin dans la prairie",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "foret",
+                    "description": "Vous vous dirigez vers la forêt",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "montagne",
+                    "description": "Vous prenez la direction de la montagne",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Vous arrivez à une ville marchande, vous avez plusieurs options",
+            "evenement": [
+                {
+                    "nom": "marchand",
+                    "description": "Vous allez voir le marchand",
+                    "type": "marchand",
+                    "caracteristiques": "marchand"
+                },
+                {
+                    "nom": "vieux messieur",
+                    "description": "Vous discutez avec mr vm",
+                    "type": "pnj",
+                    "caracteristiques": "quete"
+                },
+                {
+                    "nom": "auberge",
+                    "description": "Vous allez à l'auberge",
+                    "type": "auberge",
+                    "caracteristiques": "auberge"
+                },
+                {
+                    "nom": "quitter",
+                    "description": "Vous quittez la ville",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Vous voyez une maison abandonnée au loin, vous avez deux options",
+            "evenement":[
+                {
+                    "nom": "maison_abandonnee",
+                    "description": "Vous allez voir la maison",
+                    "type": "maison",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "continuer",
+                    "description": "Vous continuez votre chemin",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        }
+    ]
+}

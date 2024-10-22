@@ -1,0 +1,92 @@
+{
+    "nom": "montagne",
+    "description": "Une chaîne de montagnes rocheuses et imposantes, où les monstres sont plus agressifs et les chemins dangereux.",
+    "histoire": [
+        {
+            "texte": "Le sentier de la montagne se divise en deux, vous avez deux options",
+            "evenement": [
+                {
+                    "nom": "sommet",
+                    "description": "Vous montez vers le sommet de la montagne",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "grotte",
+                    "description": "Vous décidez de vous diriger vers une grotte sombre dans la montagne",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Un passage étroit vous mène à un autre carrefour, vous avez trois options",
+            "evenement": [
+                {
+                    "nom": "sommet",
+                    "description": "Vous poursuivez votre ascension vers le sommet",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "village_montagneux",
+                    "description": "Vous descendez légèrement vers un petit village de montagne",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "plateau",
+                    "description": "Vous décidez de marcher vers un plateau rocheux",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Vous arrivez au village montagnard, vous avez plusieurs options",
+            "evenement": [
+                {
+                    "nom": "forgeron",
+                    "description": "Vous allez voir le forgeron du village",
+                    "type": "marchand",
+                    "caracteristiques": "marchand"
+                },
+                {
+                    "nom": "ancien",
+                    "description": "Vous parlez avec l'ancien du village",
+                    "type": "pnj",
+                    "caracteristiques": "quete"
+                },
+                {
+                    "nom": "auberge",
+                    "description": "Vous vous reposez à l'auberge",
+                    "type": "auberge",
+                    "caracteristiques": "auberge"
+                },
+                {
+                    "nom": "quitter",
+                    "description": "Vous quittez le village et reprenez votre chemin dans la montagne",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Au sommet, vous voyez une ancienne forteresse abandonnée, vous avez deux options",
+            "evenement": [
+                {
+                    "nom": "forteresse_abandonnee",
+                    "description": "Vous explorez l'ancienne forteresse",
+                    "type": "forteresse",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "continuer",
+                    "description": "Vous continuez à suivre le sentier de montagne",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        }
+    ]
+}
