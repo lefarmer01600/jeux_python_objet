@@ -1,0 +1,109 @@
+{
+    "nom": "forêt",
+    "description": "Une forêt dense et sombre où les monstres sont plus puissants, mais où l'on trouve des trésors cachés",
+    "histoire": [
+        {
+            "texte": "Le chemin se divise en deux, vous avez deux options",
+            "evenement": [
+                {
+                    "nom": "forêt",
+                    "description": "Vous continuez à travers la forêt dense",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "caverne",
+                    "description": "Vous vous dirigez vers une caverne obscure",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Vous arrivez à un carrefour, vous avez trois options",
+            "evenement": [
+                {
+                    "nom": "forêt",
+                    "description": "Vous continuez votre chemin dans la forêt",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "caverne",
+                    "description": "Vous explorez une caverne plus profonde",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                },
+                {
+                    "nom": "ruines",
+                    "description": "Vous vous aventurez vers des ruines anciennes",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Vous trouvez un petit village caché, vous avez plusieurs options",
+            "evenement": [
+                {
+                    "nom": "marchand",
+                    "description": "Vous discutez avec le marchand local",
+                    "type": "marchand",
+                    "caracteristiques": "marchand"
+                },
+                {
+                    "nom": "auberge",
+                    "description": "Vous décidez de vous reposer à l'auberge du village",
+                    "type": "auberge",
+                    "caracteristiques": "auberge"
+                },
+                {
+                    "nom": "Jean Louis Davide",
+                    "description": "Vous discutez avec Jean Louis Davide",
+                    "type": "pnj",
+                    "caracteristiques": "quete"
+                },
+                {
+                    "nom": "quitter",
+                    "description": "Vous quittez le village et retournez dans la forêt",
+                    "type": "zone",
+                    "caracteristiques": "change_zone"
+                }
+            ]
+        },
+        {
+            "texte": "Vous trouver un coffre",
+            "evenement": [
+                {
+                    "nom": "coffre",
+                    "description": "Vous ouvrez le coffre",
+                    "type": "combat",
+                    "caracteristiques": "C'etait un faux coffre, mangetout apparait : combat"
+                },
+                {
+                    "nom": "sortir",
+                    "description": "Vous sortez de la maison",
+                    "type": "zone",
+                    "caracteristiques": "retour_dans_foret"
+                }
+            ]
+        },
+        {
+            "texte": "Vous trouver un coffre",
+            "evenement": [
+                {
+                    "nom": "coffre",
+                    "description": "Vous ouvrez le coffre",
+                    "type": "itme",
+                    "caracteristiques": "add_item"
+                },
+                {
+                    "nom": "sortir",
+                    "description": "Vous sortez de la maison",
+                    "type": "zone",
+                    "caracteristiques": "retour_dans_foret"
+                }
+            ]
+        }
+    ]
+}

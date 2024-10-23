@@ -1,0 +1,40 @@
+{
+    "nom": "Maison abandonnée",
+    "description": "Une maison avec le toit effondré, des fenêtres brisées et des murs couverts de mousse",
+    "histoire": [
+        {
+            "texte": "Vous rentre dans cette maison, vous commencé a fouillez et trouver un coffre",
+            "evenement": [
+                {
+                    "nom": "coffre",
+                    "description": "Vous ouvrez le coffre",
+                    "type": "combat",
+                    "caracteristiques": "C'etait un faux coffre, mangetout apparait : combat"
+                },
+                {
+                    "nom": "sortir",
+                    "description": "Vous sortez de la maison",
+                    "type": "zone",
+                    "caracteristiques": "retour_dans_prairie"
+                }
+            ]
+        },
+        {
+            "texte": "Vous rentre dans cette maison, vous commencé a fouillez et trouver un coffre",
+            "evenement": [
+                {
+                    "nom": "coffre",
+                    "description": "Vous ouvrez le coffre",
+                    "type": "itme",
+                    "caracteristiques": "add_item"
+                },
+                {
+                    "nom": "sortir",
+                    "description": "Vous sortez de la maison",
+                    "type": "zone",
+                    "caracteristiques": "retour_dans_prairie"
+                }
+            ]
+        }
+    ]
+}
