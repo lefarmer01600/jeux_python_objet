@@ -356,7 +356,7 @@
       },
       {
         "Id_Objets": 26,
-        "prix": 120,
+        "prix": 100,
         "nom": "Casque classique",
         "description": "Un casque de protection classique",
         "degats": 0,
@@ -367,7 +367,7 @@
         "mana": 0
       },{
         "Id_Objets": 27,
-        "prix": 150,
+        "prix": 130,
         "nom": "Casque en métal",
         "description": "Un casque de protection en métal pour absorber les choques puissant",
         "degats": 0,
@@ -403,7 +403,7 @@
       },
       {
         "Id_Objets": 30,
-        "prix": 200,
+        "prix": 220,
         "nom": "Casque en mithril",
         "description": "Un casque de protection en mithril pour absorber les choques les plus puissants",
         "degats": 0,
@@ -412,7 +412,248 @@
         "attribut": "armure",
         "vitesse": -10,
         "mana": 0
-      }
+      },
+      {
+        "Id_Objets": 31,
+        "prix": 120,
+        "nom": "Torse classique",
+        "description": "Un torse de protection classique",
+        "degats": 0,
+        "resistance": 20,
+        "hp": 20,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 32,
+        "prix": 150,
+        "nom": "Torse en métal",
+        "description": "Un Torse de protection en métal pour absorber les choques puissant",
+        "degats": 0,
+        "resistance": 30,
+        "hp": 25,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 33,
+        "prix": 180,
+        "nom": "Torse de protéction avancé",
+        "description": "Un Torse de protection classique",
+        "degats": 0,
+        "resistance": 40,
+        "hp": 25,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 34,
+        "prix": 220,
+        "nom": "Torse en acier trempé",
+        "description": "Un Torse en acier trempé qui absorbe les choques en étant leger",
+        "degats": 0,
+        "resistance": 35,
+        "hp": 25,
+        "attribut": "armure",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 35,
+        "prix": 240,
+        "nom": "Torse en mithril",
+        "description": "Un Torse de protection en mithril pour absorber les choques les plus puissants",
+        "degats": 0,
+        "resistance": 70,
+        "hp": 50,
+        "attribut": "armure",
+        "vitesse": -10,
+        "mana": 0
+      },
+      {
+       "Id_Objets": 36,
+        "prix": 80,
+        "nom": "Bottes classique",
+        "description": "Des bottes de protection classique",
+        "degats": 0,
+        "resistance": 10,
+        "hp": 10,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 37,
+        "prix": 110,
+        "nom": "Bottes en métal",
+        "description": "Des bottes de protection en métal pour absorber les choques puissant",
+        "degats": 0,
+        "resistance": 20,
+        "hp": 15,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 38,
+        "prix": 140,
+        "nom": "Bottes de protéction avancé",
+        "description": "Des bottes de protection classique",
+        "degats": 0,
+        "resistance": 25,
+        "hp": 15,
+        "attribut": "armure",
+        "vitesse": -5,
+        "mana": 0 
+      },
+      {
+        "Id_Objets": 39,
+        "prix": 150,
+        "nom": "Bottes en métal",
+        "description": "Des bottes de protection en métal pour absorber les choques puissant",
+        "degats": 0,
+        "resistance": 20,
+        "hp": 25,
+        "attribut": "armure",
+        "vitesse": 0,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 40,
+        "prix": 210,
+        "nom": "Bottes en mithril",
+        "description": "Des bottes de protection en mithril pour absorber les choques les plus puissants",
+        "degats": 0,
+        "resistance": 40,
+        "hp": 50,
+        "attribut": "armure",
+        "vitesse": -10,
+        "mana": 0
+      },
+      {
+        "Id_Objets": 41,
+        "prix": 180,
+        "nom": "Amulette de force",
+        "description": "Augmente considérablement la force du porteur",
+        "degats": 50,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "accessoire",
+        "vitesse": 10,
+        "mana": 0
+    },
+    {
+        "Id_Objets": 42,
+        "prix": 200,
+        "nom": "Anneau de sagesse",
+        "description": "Augmente la sagesse et la régénération de mana",
+        "degats": 0,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "accessoire",
+        "vitesse": 0,
+        "mana": 50
+    },
+    {
+        "Id_Objets": 43,
+        "prix": 250,
+        "nom": "Capuche du voleur",
+        "description": "Améliore la vitesse et la furtivité",
+        "degats": 0,
+        "resistance": 10,
+        "hp": 0,
+        "attribut": "armure",
+        "vitesse": 20,
+        "mana": 0
+    },
+    {
+        "Id_Objets": 44,
+        "prix": 300,
+        "nom": "Épée flamboyante",
+        "description": "Une épée imprégnée de flammes magiques",
+        "degats": 200,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": -5,
+        "mana": -50
+    },
+    {
+        "Id_Objets": 45,
+        "prix": 280,
+        "nom": "Bouclier d'émeraude",
+        "description": "Un bouclier magique qui absorbe les dégâts",
+        "degats": 0,
+        "resistance": 50,
+        "hp": 50,
+        "attribut": "2ème main",
+        "vitesse": -10,
+        "mana": 0
+    },
+    {
+        "Id_Objets": 46,
+        "prix": 400,
+        "nom": "Bâton du dragon",
+        "description": "Un bâton légendaire avec une tête de dragon",
+        "degats": 300,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "distance",
+        "vitesse": 0,
+        "mana": -100
+    },
+    {
+        "Id_Objets": 47,
+        "prix": 180,
+        "nom": "Armure en obsidienne",
+        "description": "Une armure légère et résistante",
+        "degats": 0,
+        "resistance": 40,
+        "hp": 30,
+        "attribut": "armure",
+        "vitesse": -10,
+        "mana": 0
+    },
+    {
+        "Id_Objets": 48,
+        "prix": 120,
+        "nom": "Dague empoisonnée",
+        "description": "Une dague enduite d'un poison mortel",
+        "degats": 100,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": 10,
+        "mana": 0
+    },
+    {
+        "Id_Objets": 49,
+        "prix": 220,
+        "nom": "Cape de l'ombre",
+        "description": "Une cape qui confère l'invisibilité temporaire",
+        "degats": 0,
+        "resistance": 20,
+        "hp": 0,
+        "attribut": "armure",
+        "vitesse": 15,
+        "mana": 0
+    },
+    {
+        "Id_Objets": 50,
+        "prix": 500,
+        "nom": "Lame du chaos",
+        "description": "Une lame imprévisible qui peut infliger des dégâts massifs",
+        "degats": 500,
+        "resistance": 0,
+        "hp": 0,
+        "attribut": "mélée",
+        "vitesse": -20,
+        "mana": -100
+    }
+
     ]
   }
   
