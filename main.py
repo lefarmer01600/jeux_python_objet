@@ -1,8 +1,30 @@
 from src.histoire import lieux, event, histoire
+from src.interaction import Combat
+from src.personnage import inventaire, Personnages
 
 import tkinter as tk
 import json
 
+joueur1 = Personnages.Joueur(100, 10, 10)
+joueur2 = Personnages.Joueur(100, 10, 10)
+# commbat contient listes de joueurs et de monstres
+"""
+##### fonctions
+
+# loadJson : récupérer un fichier Json et retourne un dictionnaire
+# createFrame : créer une frame dans une fenêtre
+# _event : pour créer un objet event
+# Event : ---------- en cours d'implémentation ----------
+# testEvent : créer les boutons pour les évènements
+# displayPlace : affiche le lieu où l'on se trouve
+
+"""
+
+
+
+
+
+## fichiers JSON
 json_lieu_foret = "lieux/foret.json"
 json_lieu_maisonAbandonnee = "lieux/maison_abandonnee.json"
 json_lieu_montagne = "lieux/montagne.json"
