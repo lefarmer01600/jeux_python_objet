@@ -51,6 +51,11 @@
         "name": "mana",
         "type": "varchar(50)",
         "nullable": true
+      },
+      {
+        "name":"rareté",
+        "type": "varchar(50)",
+        "nullable": true
       }
     ],
     "data": [
@@ -64,7 +69,8 @@
         "hp": 500,
         "attribut": "0",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 2,
@@ -76,7 +82,8 @@
         "hp": 0,
         "attribut": "0",
         "vitesse": 0,
-        "mana": 200
+        "mana": 200,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 3,
@@ -88,7 +95,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": -10,
-        "mana": 0
+        "mana": 0,
+         "rareté": "Classique"
       },
       {
         "Id_Objets": 4,
@@ -100,7 +108,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 5,
@@ -112,7 +121,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 6,
@@ -124,7 +134,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": -50
+        "mana": -50,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 7,
@@ -136,7 +147,8 @@
         "hp": 50,
         "attribut": "2ème main",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 8,
@@ -148,7 +160,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 9,
@@ -160,7 +173,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 10,
@@ -172,7 +186,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": -500
+        "mana": -500,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 11,
@@ -184,7 +199,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": 30,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 12,
@@ -196,7 +212,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 20
+        "mana": 20,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 13,
@@ -208,7 +225,8 @@
         "hp": 50,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 50
+        "mana": 50,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 14,
@@ -220,7 +238,8 @@
         "hp": 0,
         "attribut": "attribut",
         "vitesse": 0,
-        "mana": -15
+        "mana": -15,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 15,
@@ -232,7 +251,8 @@
         "hp": 0,
         "attribut": "2ème main",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 16,
@@ -244,7 +264,8 @@
         "hp": 100,
         "attribut": "mélée",
         "vitesse": 0,
-        "mana": 500
+        "mana": 500,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 17,
@@ -256,7 +277,8 @@
         "hp": 100,
         "attribut": "2ème main",
         "vitesse": 10,
-        "mana": 100
+        "mana": 100,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 18,
@@ -268,7 +290,8 @@
         "hp": 100,
         "attribut": "2ème main",
         "vitesse": 10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 19,
@@ -280,7 +303,8 @@
         "hp": 100,
         "attribut": "2ème main",
         "vitesse": 10,
-        "mana": 150
+        "mana": 150,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 20,
@@ -292,7 +316,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 21,
@@ -304,7 +329,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 75
+        "mana": 75,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 22,
@@ -316,7 +342,8 @@
         "hp": 0,
         "attribut": "semi-distance",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 23,
@@ -328,7 +355,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 150
+        "mana": 150,
+        "rareté": "Classique"
       }
       ,{
         "Id_Objets": 24,
@@ -340,7 +368,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 25,
@@ -352,7 +381,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 26,
@@ -364,7 +394,8 @@
         "hp": 15,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },{
         "Id_Objets": 27,
         "prix": 130,
@@ -375,7 +406,8 @@
         "hp": 20,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 28,
@@ -387,7 +419,8 @@
         "hp": 20,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0 
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 29,
@@ -399,7 +432,8 @@
         "hp": 20,
         "attribut": "armure",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 30,
@@ -411,7 +445,8 @@
         "hp": 40,
         "attribut": "armure",
         "vitesse": -10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 31,
@@ -423,7 +458,8 @@
         "hp": 20,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 32,
@@ -435,7 +471,8 @@
         "hp": 25,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 33,
@@ -447,7 +484,8 @@
         "hp": 25,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 34,
@@ -459,7 +497,8 @@
         "hp": 25,
         "attribut": "armure",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 35,
@@ -471,7 +510,8 @@
         "hp": 50,
         "attribut": "armure",
         "vitesse": -10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
        "Id_Objets": 36,
@@ -483,7 +523,8 @@
         "hp": 10,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 37,
@@ -495,7 +536,8 @@
         "hp": 15,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 38,
@@ -507,7 +549,8 @@
         "hp": 15,
         "attribut": "armure",
         "vitesse": -5,
-        "mana": 0 
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 39,
@@ -519,7 +562,8 @@
         "hp": 25,
         "attribut": "armure",
         "vitesse": 0,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 40,
@@ -531,7 +575,8 @@
         "hp": 50,
         "attribut": "armure",
         "vitesse": -10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "Classique"
       },
       {
         "Id_Objets": 41,
@@ -543,7 +588,8 @@
         "hp": 0,
         "attribut": "accessoire",
         "vitesse": 10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 42,
@@ -555,7 +601,8 @@
         "hp": 0,
         "attribut": "accessoire",
         "vitesse": 0,
-        "mana": 50
+        "mana": 50,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 43,
@@ -567,7 +614,8 @@
         "hp": 0,
         "attribut": "armure",
         "vitesse": 20,
-        "mana": 0
+        "mana": 0,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 44,
@@ -579,7 +627,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": -5,
-        "mana": -50
+        "mana": -50,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 45,
@@ -591,7 +640,8 @@
         "hp": 50,
         "attribut": "2ème main",
         "vitesse": -10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 46,
@@ -603,7 +653,8 @@
         "hp": 0,
         "attribut": "distance",
         "vitesse": 0,
-        "mana": -100
+        "mana": -100,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 47,
@@ -615,7 +666,8 @@
         "hp": 30,
         "attribut": "armure",
         "vitesse": -10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 48,
@@ -627,7 +679,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": 10,
-        "mana": 0
+        "mana": 0,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 49,
@@ -639,7 +692,8 @@
         "hp": 0,
         "attribut": "armure",
         "vitesse": 15,
-        "mana": 0
+        "mana": 0,
+        "rareté": "légendaire"
     },
     {
         "Id_Objets": 50,
@@ -651,7 +705,8 @@
         "hp": 0,
         "attribut": "mélée",
         "vitesse": -20,
-        "mana": -100
+        "mana": -100,
+        "rareté": "légendaire"
     }
 
     ]

@@ -5,8 +5,10 @@ class De:
         return randint(1, 6)
 
 class Joueur:
-    def __init__(self, point_de_vie):
+    def __init__(self, point_de_vie, potions, bombes):
         self.point_de_vie = point_de_vie
+        self.potions = potions
+        self.bombes = bombes
         self.de = De()
 
     def est_vivant(self):
@@ -22,8 +24,24 @@ class Joueur:
             monstre.recoit_degat()
 
     def recoit_degat(self, degats):
-        if self.jeter_de() > 2:
+        if self.jeter_de() > 1:
             self.point_de_vie -= degats
+
+    def utiliser_potion(self):
+        if self.potions > 0:
+            self.point_de_vie += 3
+            self.potions -= 1
+            print(f"Vous avez utilisé une potion. Points de vie actuels : {self.point_de_vie}. Potions restantes : {self.potions}")
+        else:
+            print("Vous n'avez plus de potions.")
+
+    def utiliser_bombe(self, monstre):
+        if self.bombes > 0:
+            monstre.recoit_degat()
+            self.bombes -= 1
+            print(f"Vous avez utilisé une bombe. Bombes restantes : {self.bombes}")
+        else:
+            print("Vous n'avez plus de bombes.")
 
 class MonstreNiveau1:
     def __init__(self, degats):
@@ -54,15 +72,35 @@ class MonstreNiveau2(MonstreNiveau1):
             joueur.recoit_degat(self.sort)
 
 # Exemple d'utilisation
-joueur = Joueur(10)
-monstre1 = MonstreNiveau1(3)
-monstre2 = MonstreNiveau2(4, 2)
+joueur = Joueur(10, 2, 1)  # Le joueur commence avec 2 potions et 1 bombe
+monstres = [MonstreNiveau1(3), MonstreNiveau2(4, 2)]
 
-# Simuler une attaque
-joueur.attaquer(monstre1)
-monstre1.attaquer(joueur)
-monstre2.attaquer(joueur)
+for monstre in monstres:
+    if not joueur.est_vivant():
+        print("Le joueur a été vaincu.")
+        break
 
-print(f"Joueur vivant: {joueur.est_vivant()}, Points de vie: {joueur.point_de_vie}")
-print(f"Monstre 1 vivant: {monstre1.est_vivant}")
-print(f"Monstre 2 vivant: {monstre2.est_vivant}")
+    # Choisir un objet avant le combat
+    choix = input("Choisissez un objet (potion/bombe/rien) : ").strip().lower()
+    if choix == "potion":
+        joueur.utiliser_potion()
+    elif choix == "bombe":
+        joueur.utiliser_bombe(monstre)
+        if not monstre.est_vivant:
+            continue
+    elif choix == "rien":
+        print("Vous avez choisi de ne rien utiliser.")
+
+    while joueur.est_vivant() and monstre.est_vivant:
+        joueur.attaquer(monstre)
+        if monstre.est_vivant:
+            monstre.attaquer(joueur)
+        
+        # Afficher l'état après chaque tour
+        print(f"État du joueur : Points de vie = {joueur.point_de_vie}")
+        print(f"État du monstre : Vivant = {monstre.est_vivant}")
+
+if joueur.est_vivant():
+    print("Le joueur a battu tous les monstres.")
+else:
+    print(f"Joueur vivant: {joueur.est_vivant()}, Points de vie: {joueur.point_de_vie}"),
