@@ -3,7 +3,7 @@
 les personnages & monstres : 
 des attributs ; un equipement de depart ; faire perdre des pv ; en gagner 
 
-les interaction : 
+- les interaction : 
 Marchand ( échange ) 
 Combat 
 
