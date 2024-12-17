@@ -7,6 +7,9 @@ import json
 
 joueur1 = Personnages.Joueur(100, 10, 10)
 joueur2 = Personnages.Joueur(100, 10, 10)
+monstreNv1 = Personnages.Monstre(20, 100, 1)
+monstreNv2 = Personnages.Monstre(30, 100, 2)
+
 # commbat contient listes de joueurs et de monstres
 """
 ##### fonctions
@@ -19,10 +22,6 @@ joueur2 = Personnages.Joueur(100, 10, 10)
 # displayPlace : affiche le lieu où l'on se trouve
 
 """
-
-
-
-
 
 ## fichiers JSON
 json_lieu_foret = "lieux/foret.json"
@@ -81,6 +80,8 @@ def _event(evenement):
 def Event(Evt) :
     text2.insert("1.0", "Description : "+Evt['description']+"\n")
     text2.insert("1.0", "Type : "+Evt['type']+"\n")
+    if Evt['type'] == 'combat' :
+        text2.insert("1.0", "Fight!\n")
     text2.insert("1.0", "--------------------------------")
 
 def testEvent(Evt) :
