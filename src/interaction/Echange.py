@@ -2,6 +2,23 @@ from src.personnage.inventaire import *
 from src.personnage.Personnages import *
 
 class Echange:
+    """
+    Classe représentant un échange entre le joueur et le marchand.
+    ---------
+    Attributs:
+    ----------
+
+    inventaire_joueur : Inventaire
+        L'inventaire du joueur.
+    inventaire_marchand : Inventaire
+        L'inventaire du marchand.
+
+    Méthodes:
+    ---------
+    proposer_echange():
+        Propose un échange entre le joueur et le marchand en affichant les objets disponibles
+        et en permettant au joueur de choisir un objet à échanger.
+    """
     def __init__(self, inventaire_joueur, inventaire_marchand):
         self.inventaire_joueur = inventaire_joueur
         self.inventaire_marchand = inventaire_marchand
