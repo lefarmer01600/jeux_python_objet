@@ -30,7 +30,7 @@ class Echange:
                 self.inventaire_marchand.supprimer_objet(objet_marchand)
                 self.inventaire_marchand.ajouter_objet(objet_joueur)
 
-                print(f"Echange reussi ! Vous avez obtenu {objet_marchand} en échange de {objet_joueur}.")
+                print(f"Echange reussi ! \n Vous avez obtenu {objet_marchand} en échange de {objet_joueur}.")
             else:
                 print("Echange impossible : choix invalide.")
         except ValueError:

@@ -18,23 +18,17 @@ class Combat:
 
     # la méthode joueurs_attaquent est responsable de l'interaction des joueurs
     def joueurs_attaquent(self):
-        for joueur in self.joueurs:
-            if not joueur.est_vivant():
-                continue
-
-            cible = self.choisir_cible(self.monstres)
-            if cible:
-                joueur.attaquer(cible)
+        for Player in self.joueurs:
+            if Player.est_vivant():
+                cible = self.choisir_cible(self.monstres)
+                Player.attaquer(cible)
 
     # la méthode monstres_attaquent est responsable de l'interaction des monstres
     def monstres_attaquent(self):
-        for monstre in self.monstres:
-            if not monstre.est_vivant():
-                continue
-
-            cible = self.choisir_cible(self.joueurs)
-            if cible:
-                monstre.attaquer(cible)
+        for mob in self.monstres:
+            if mob.est_vivant():
+                cible = self.choisir_cible(self.joueurs)
+                mob.attaquer(cible)
 
     # la méthode choisir_cible est responsable de choisir une cible parmi une liste de cibles
     def choisir_cible(self, cibles):
