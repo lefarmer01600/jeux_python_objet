@@ -63,9 +63,11 @@ class Combat:
 
     # la méthode verifier_etat_combat est responsable de vérifier si le combat est terminé
     def verifier_etat_combat(self):
-        if (Player.est_vivant() for Player in self.joueurs):
+        if self.joueurs.est_vivant() == False:
             print("Tous les joueurs sont morts. Les monstres gagnent !")
             exit()
-        if (mob.est_vivant() for mob in self.monstres):
+        elif self.monstres.est_vivant() == False:
             print("Tous les monstres sont morts. Les joueurs gagnent !")
             exit()
+        else:
+            print("Le combat continue...")
