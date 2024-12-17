@@ -24,14 +24,17 @@ class Echange:
         self.inventaire_marchand = inventaire_marchand
 
     # Méthode permettant de proposer un échange entre le joueur et le marchand
-    def proposer_echange(self):
+    def proposer_echange(self):  
         print("--- Objets disponibles chez le marchand ---")
-        for i, item in enumerate(self.inventaire_marchand.liste_inventaire):
-            print(f"{i + 1}. {item}")
+        for index in range(len(self.inventaire_marchand.liste_inventaire)):
+            item = self.inventaire_marchand.liste_inventaire[index]
+            print(f"{index + 1}. {item}")
 
         print("--- Vos objets ---")
-        for i, item in enumerate(self.inventaire_joueur.liste_inventaire):
-            print(f"{i + 1}. {item}")
+        for index in range(len(self.inventaire_joueur.liste_inventaire)):
+            item = self.inventaire_joueur.liste_inventaire[index]
+            print(f"{index + 1}. {item}")
+
 
         try:
             choix_joueur = int(input("Entrez le numéro de l'objet que vous souhaitez échanger (chez vous) : ")) - 1
