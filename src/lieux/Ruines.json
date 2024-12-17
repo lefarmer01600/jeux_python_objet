@@ -1,0 +1,40 @@
+{
+    "nom": "Ruines",
+    "description": "Les ruines d'un ancien château, ayant vécu de nombreuses batailles",
+    "histoire": [
+        {
+            "texte": "Vous pénetrez dans les ruines",
+            "evenement": [
+                {
+                    "nom": "sorcier",
+                    "description": "Un sorcier vous propose un marché étrange en échange de 50 pièces d'or.",
+                    "type": "marchand",
+                    "caracteristiques": "Vous échangez 50 gold pour une potion. "
+                },
+                {
+                    "nom": "sortir",
+                    "description": "Vous vous en allez des ruines",
+                    "type": "zone",
+                    "caracteristiques": "retour_dans_prairie"
+                }
+            ]
+        },
+        {
+            "texte": "Vous rentrer dans la salle des coffres et trouvé un objet rayonnant d'une lumière malfaisante",
+            "evenement": [
+                {
+                    "nom": "Objet légendaire",
+                    "description": "Vous prenez l'objet",
+                    "type": "item",
+                    "caracteristiques": "add_item_légendaire"
+                },
+                {
+                    "nom": "Partir",
+                    "description": "Vous préferez laisser l'arme et vous en allez",
+                    "type": "zone",
+                    "caracteristiques": "retour_dans_prairie"
+                }
+            ]
+        }
+    ]
+}

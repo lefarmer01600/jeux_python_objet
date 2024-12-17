@@ -25,7 +25,7 @@
                 {
                     "nom": "coffre",
                     "description": "Vous ouvrez le coffre",
-                    "type": "itme",
+                    "type": "item",
                     "caracteristiques": "add_item"
                 },
                 {
