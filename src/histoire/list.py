@@ -13,7 +13,19 @@ tmp = histoire("Le chemin ce sépare en deux, vous avez deux options")
 tmp.add_evenement(event("fôret", "pénetrer dans la fôret", "zone", "change_zone"))
 tmp.add_evenement(event("prairie", "rester dans la prairie", "zone", "change_zone"))
 
+tmp.add_evenement(event("coffre mystère", "Vous trouvez un coffre entouré d'une aura étrange.", "bonus", "add_object_random"))
+tmp.add_evenement(event("embuscade", "Des bandits surgissent des buissons pour vous attaquer !", "combat", "combat_ennemi_boss"))
+tmp.add_evenement(event("sorcier", "Un sorcier vous propose un marché étrange en échange de 50 pièces d'or.", "marchand", "gold-50, gain_potion_rare"))
+tmp.add_evenement(event("ruines", "Vous trouvez une entrée menant à d'anciennes ruines.", "exploration", "nouvelle_zone_ruines"))
+tmp.add_evenement(event("blessure", "Vous marchez sur un piège dissimulé dans l'herbe haute.", "malus", "pv-20"))
+tmp.add_evenement(event("pnj_rencontre", "Vous croisez un voyageur qui semble avoir des informations intéressantes.", "histoire", "débloque quête annexe"))
+tmp.add_evenement(event("tempête", "Une tempête surgit, réduisant votre visibilité.", "malus", "vision-10, vitesse-20"))
+tmp.add_evenement(event("portail", "Un portail apparaît devant vous, vibrant d'énergie.", "zone", "change_zone_portail"))
+tmp.add_evenement(event("dragon", "Vous apercevez un dragon endormi au loin. Tenter de s'approcher ?", "risque", "combat_dragon, loot_légendaire"))
 
+print(tmp.get_text())
+for evenement in tmp.get_evenements():
+    print(f"Nom: {evenement.name}, Description: {evenement.description}, Type: {evenement.type}, Caractéristiques: {evenement.caracteristiques}")
 
 # tmp.add_evenement(event("coffre", "trouve un coffre et l'ouvre", "bonus", "add_object"))
 # tmp.add_evenement(event("fôret", "pénetrer dans la fôret", "Nouvelle zone", "nouveaux ennemies"))
