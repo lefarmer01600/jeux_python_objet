@@ -15,7 +15,7 @@
                     "nom": "sortir",
                     "description": "Vous vous en allez des ruines",
                     "type": "zone",
-                    "caracteristiques": "retour_dans_prairie"
+                    "caracteristiques": "retour_dans_montagne"
                 }
             ]
         },
@@ -32,7 +32,7 @@
                     "nom": "Partir",
                     "description": "Vous préferez laisser l'arme et vous en allez",
                     "type": "zone",
-                    "caracteristiques": "retour_dans_prairie"
+                    "caracteristiques": "retour_dans_montagne"
                 }
             ]
         }
