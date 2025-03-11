@@ -96,22 +96,23 @@ def testEvent(EvtList):
 
 # displayPlace : affiche le lieu où l'on se trouve
 def displayPlace(DictLieu, lieu):
-
+    for widget in Histoire.winfo_children():
+            if isinstance(widget, tk.Button):
+                widget.destroy()
+                
     text1.insert("1.0", lieu.get_description() + "\n\n")
     lieu.add_histoire(DictLieu)
     hist = lieu.get_random_histoire()
     hist = histoire.histoire(hist['description'])
+    
+    text2.delete("1.0", tk.END)
+    
     for i in range(len(DictLieu['histoire'])):
         for evt in DictLieu['histoire'][i]['evenement']:
             Event(evt)
         testEvent(DictLieu['histoire'][i]['evenement'])
 
-# Créer les boutons radio pour les options
-for i in range(len(options)):
-    
-    lieu = lieux.lieu(options[i]['nom'], options[i]['description'])
-    tk.Button(root, text=texteBoutons[i], command=lambda opt=options[i], lieu=lieu: displayPlace(opt, lieu)).pack(pady=20)
-    
+
 
 def monstreCible() :
     return random.choice([monstreNv1, monstreNv2])
@@ -135,5 +136,13 @@ if joueur1.est_vivant() :
 if joueur2.est_vivant() :
         tk.Button(evenements, text="Joueur 1 : utiliser une potion", command=lambda var=joueur2: joueur2.utiliser_potion()).pack(pady=20)
         text3.insert("1.0", "Points de vie joueur 2 : "+str(joueur2.point_de_vie)+" \n")
+
+def main() :
+    for i in range(len(options)):
+        
+
+        lieu = lieux.lieu(options[i]['nom'], options[i]['description'])
+        test =tk.Button(root, text=texteBoutons[i], command=lambda opt=options[i], lieu=lieu: displayPlace(opt, lieu)).pack(pady=20)
+main()
 root.mainloop()
 Histoire.mainloop()
